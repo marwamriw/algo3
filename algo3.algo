@@ -8,7 +8,7 @@ BEGIN
             read(arr[i])
     END FOR
 FOR i FROM 0 TO arr.lenght-1 STEP 1 DO
-    FOR (j=i+1) and (j>0) STEP  1  DO
+    FOR j=i+1 and j>0 STEP-1  DO
         IF(arr[j]<arr[j-1]) THEN 
             temp := arr[j];
             arr[j]:=arr[j-1];
